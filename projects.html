@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Projects — Clarencia Augustine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Clarencia's Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="container">
+            <span class="eyebrow eyebrow-center">// selected work</span>
+            <h1 class="page-title fade-in">My Projects</h1>
+            <p class="page-subtitle fade-in">A collection of my recent work and achievements</p>
+
+            <!-- Project Filter -->
+            <div class="project-filters fade-in">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Website</button>
+                <button class="filter-btn" data-filter="mobile">UI/UX</button>
+                <button class="filter-btn" data-filter="ml">Data / ML</button>
+                <button class="filter-btn" data-filter="design">Certificate</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- TechFest Certificate -->
+                <div class="project-card certificate-card" data-category="design" data-cert-id="techfest">
+                    <div class="project-image">
+                        <img src="Asset/TechFest.png" alt="TechFest Certificate" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="project-overlay">
+                            <span class="project-link">View Certificate →</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">TechFest 2025</h3>
+                        <p class="project-description">Certificate of Achievement in UI/UX Design </p>
+                        <div class="project-tags">
+                            <span class="tag">Technology</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tagline">Certificate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Niat Baik Project -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="Asset/Niat Baik.png" alt="Niat Baik Project" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="project-overlay">
+                            <a href="https://niatbaik.netlify.app/" target="_blank" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Niat Baik</h3>
+                        <p class="project-description">Website platform for sharing kindness and helping others</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tagline">Website</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VPhone E-Commerce -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="Asset/VPhone.png" alt="VPhone Project" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="project-overlay">
+                            <a href="https://vphoneecommerce.netlify.app/" target="_blank" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">V-Phone</h3>
+                        <p class="project-description">Smartphone e-commerce for simple and reliable shopping</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tagline">Website</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <img src="Asset/EcoSort.png" alt="EcoSort Project" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="project-overlay">
+                            <a href="https://ecosort-cv.streamlit.app" target="_blank" rel="noopener noreferrer" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">EcoSort</h3>
+                        <p class="project-description">A machine-learning app that sorts waste into recycling categories, built and deployed with Streamlit.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Streamlit</span>
+                            <span class="tagline">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="Asset/BeBloom.png" alt="BeBloom Project" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="project-overlay">
+                            <a href="https://www.figma.com/design/M1vqoaYKnRO1BRzUi6vz7u/BeBloom-Final?node-id=0-1&t=8u1ulyc5MPR5rkTr-1" target="_blank" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">BeBloom</h3>
+                        <p class="project-description">Parenting companion for new parents and toddlers — UI/UX design in Figma.</p>
+                        <div class="project-tags">
+                            <span class="tag">Design</span>
+                            <span class="tag">Figma</span>
+                            <span class="tagline">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <img src="Asset/StockBit.png" alt="Stockbit Sentiment Analysis" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Stockbit Sentiment Analysis</h3>
+                        <p class="project-description">Sentiment analysis on Indonesian Stockbit investor comments, comparing TF-IDF, SVM, FinBERT, and Indo-RoBERTa.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">NLP</span>
+                            <span class="tagline">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Study2Challenge Certificate -->
+                <div class="project-card certificate-card" data-category="design" data-cert-id="study2challenge">
+                    <div class="project-image">
+                        <img src="Asset/Study2Challenge.png" alt="Study2Challenge Certificate" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="project-overlay">
+                            <span class="project-link">View Certificate →</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Study2Challenge</h3>
+                        <p class="project-description">Competition certificate earned for the Niat Baik web platform.</p>
+                        <div class="project-tags">
+                            <span class="tag">Web Dev</span>
+                            <span class="tag">Competition</span>
+                            <span class="tagline">Certificate</span>
+                        </div>
+                    </div>
+                </div>
+
+               <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="Asset/AgriRoute.png" alt="AgriRoute Project" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="project-overlay">
+                            <a href="https://www.figma.com/design/1bOEQJH9d3byA6qBf3kewW/AgriRoute?node-id=0-1&t=20mGzz0uRg2W0Tgo-1" target="_blank" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AgriRoute</h3>
+                        <p class="project-description">Collaborative agricultural logistics platform connecting farmers, distributors, and buyers — UI/UX design in Figma.</p>
+                        <div class="project-tags">
+                            <span class="tag">Design</span>
+                            <span class="tag">Figma</span>
+                            <span class="tagline">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Certificate Details</h2>
+                <button class="close-btn" id="closeModal">×</button>
+            </div>
+            <div class="modal-body">
+                <img src="Asset/TechFest.png" alt="Certificate" class="certificate-image" id="certImage">
+                <div class="certificate-details">
+                    <div class="detail-item">
+                        <span class="detail-icon">🏆</span>
+                        <div class="detail-content">
+                            <h3>Certificate Name</h3>
+                            <p id="certName">—</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-icon">🏢</span>
+                        <div class="detail-content">
+                            <h3>Issued By</h3>
+                            <p id="certIssuer">—</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-icon">📅</span>
+                        <div class="detail-content">
+                            <h3>Date Issued</h3>
+                            <p id="certDate">—</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-icon">📝</span>
+                        <div class="detail-content">
+                            <h3>Description</h3>
+                            <p id="certDescription">—</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-icon">💡</span>
+                        <div class="detail-content">
+                            <h3>Skills Demonstrated</h3>
+                            <div class="certificate-skills" id="certSkills"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Clarencia Augustine</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/clarenciaaugustine/" class="social-link">LinkedIn</a>
+                <a href="https://github.com/ClarenciaAugustine-code" class="social-link">GitHub</a>
+                <a href="https://www.instagram.com/clarenciaaugustinee/" class="social-link">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
