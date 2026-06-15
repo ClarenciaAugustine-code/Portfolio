@@ -481,6 +481,323 @@
     </footer>
 
     <script src="script.js"></script>
+</body>
+</html>
+
+        .carousel-counter span {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        /* ===== DOTS ===== */
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .carousel-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 4px;
+            background: rgba(59, 130, 246, 0.25);
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .carousel-dot.active {
+            width: 28px;
+            background: var(--accent);
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        /* ===== THUMBNAIL STRIP ===== */
+        .carousel-thumbs {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 1.25rem;
+            overflow-x: auto;
+            padding-bottom: 0.5rem;
+            scrollbar-width: none;
+        }
+
+        .carousel-thumbs::-webkit-scrollbar { display: none; }
+
+        .carousel-thumb {
+            flex-shrink: 0;
+            width: 80px;
+            height: 60px;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .carousel-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .carousel-thumb.active {
+            border-color: var(--accent);
+            opacity: 1;
+            box-shadow: 0 0 12px var(--accent-glow);
+        }
+
+        .carousel-thumb:hover {
+            opacity: 0.85;
+            border-color: rgba(59, 130, 246, 0.5);
+        }
+
+        /* Placeholder saat foto belum ada */
+        .photo-placeholder {
+            width: 100%;
+            height: 480px;
+            background: var(--bg-card);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .photo-placeholder-icon {
+            font-size: 3rem;
+            opacity: 0.4;
+        }
+
+        .photo-placeholder p {
+            font-size: 0.9rem;
+            opacity: 0.5;
+        }
+
+        .thumb-placeholder {
+            width: 100%;
+            height: 100%;
+            background: var(--bg-darker);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            opacity: 0.5;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .carousel-slide img,
+            .photo-placeholder { height: 300px; }
+
+            .carousel-btn-prev { left: 8px; }
+            .carousel-btn-next { right: 8px; }
+
+            .carousel-btn {
+                width: 38px;
+                height: 38px;
+                font-size: 1rem;
+            }
+
+            .slide-caption { font-size: 1rem; }
+
+            .carousel-thumb {
+                width: 64px;
+                height: 48px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .carousel-slide img,
+            .photo-placeholder { height: 240px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Clarencia's Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <span class="eyebrow eyebrow-center">// about</span>
+            <h1 class="page-title fade-in">About Me</h1>
+
+            <div class="about-content">
+                <div class="about-image-wrapper fade-in-left">
+                    <div class="about-image">
+                        <img src="Asset/Clarence.JPG" alt="Clarence Profile Photo" class="profile-photo">
+                        <div class="image-glow"></div>
+                    </div>
+                </div>
+
+                <div class="about-text fade-in-right">
+                    <h2 class="about-heading">Hello! I'm <span class="about-name-highlight">Clarencia Augustine</span></h2>
+                    <p>I'm a Computer Science student at Bina Nusantara University with a strong passion for technology and web programming.
+                        I'm always enthusiastic about learning new technologies and developing my skills in creating innovative digital solutions.</p>
+
+                    <p>I believe that technology should make life easier, not more complicated. Therefore, I always focus on user experience
+                        and clean code in every project I work on, whether it's for college or personal use.</p>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Projects Done</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Years Learning</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Technologies Learned</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Timeline -->
+            <div class="timeline-section">
+                <h2 class="section-title">My Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item slide-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2024 - Present</span>
+                            <h3>Undergraduate in Computer Science (S1)</h3>
+                            <p>Bina Nusantara University (BINUS)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item slide-up" style="animation-delay: 0.2s;">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2021 - 2024</span>
+                            <h3>Independent Curriculum</h3>
+                            <p>SMAS Santo Tarcisius Dumai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== ORGANIZATION GALLERY ===== -->
+            <div class="org-gallery-section slide-up">
+                <h2 class="section-title">My Experiences</h2>
+                <p class="org-gallery-subtitle"></p>
+
+                <div class="carousel-wrapper">
+                    <!-- Main Carousel -->
+                    <div class="carousel-track-container">
+                        <!-- Counter -->
+                        <div class="carousel-counter">
+                            <span id="currentSlide">1</span> / <span id="totalSlides">6</span>
+                        </div>
+
+                        <div class="carousel-track" id="carouselTrack">
+
+                            <!-- SLIDE 1 - KMBD -->
+                            <div class="carousel-slide">
+                                <img src="Asset/OMH.png" alt="KMBD - OMH 2025">
+                                <div class="slide-overlay">
+                                    <div class="slide-org-badge badge-kmbd">KMBD</div>
+                                    <p class="slide-caption">One Million Help (OMH) - 2025</p>
+                                    <p class="slide-caption-sub">Design & Documentation (DnD) - Member</p>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 2 - KMBD -->
+                            <div class="carousel-slide">
+                                <img src="Asset/Makrab2026.png" alt="KMBD - Makrab 2026">
+                                <div class="slide-overlay">
+                                    <div class="slide-org-badge badge-kmbd">KMBD</div>
+                                    <p class="slide-caption">Malam Keakraban - 2026</p>
+                                    <p class="slide-caption-sub">Design & Documentation (DnD) - Member</p>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 3 - KMBD -->
+                            <div class="carousel-slide">
+                                <img src="Asset/Yearbook.png" alt="Yearbook">
+                                <div class="slide-overlay">
+                                    <div class="slide-org-badge badge-kmbd">KMBD</div>
+                                    <p class="slide-caption">Yearbook - 2025</p>
+                                    <p class="slide-caption-sub">Design & Documentation (DnD) - Coordinator</p>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 4 - BNCC -->
+                            <div class="carousel-slide">
+                                <img src="Asset/FreshmenPartner.png" alt="Freshmen Partner">
+                                <div class="slide-overlay">
+                                    <div class="slide-org-badge badge-bncc">BINUS</div>
+                                    <p class="slide-caption">Freshmen Partner (FP)</p>
+                                    <p class="slide-caption-sub">Sept 2025 - June 2026</p>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 5 - Blu Ambassador -->
+                            <div class="carousel-slide">
+                                <img src="Asset/BluAmbassador.png" alt="Blu Ambassador">
+                                <div class="slide-overlay">
+                                    <div class="slide-org-badge badge-intern">Ambassador</div>
+                                    <p class="slide-caption">Blu Ambassador</p>
+                                    <p class="slide-caption-sub">Blu by BCA Digital</p>
+                                </div>
+                            </div>
+
+
+                        </div><!-- end carousel-track -->
+                    </div><!-- end carousel-track-container -->
+
+                    <!-- Prev / Next buttons -->
+                    <button class="carousel-btn carousel-btn-prev" id="prevBtn" aria-label="Previous">&#8592;</button>
+                    <button class="carousel-btn carousel-btn-next" id="nextBtn" aria-label="Next">&#8594;</button>
+
+                    <!-- Dots -->
+                    <div class="carousel-dots" id="carouselDots"></div>
+
+
+                </div>
+            </div>
+            <!-- end org-gallery-section -->
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Clarencia Augustine</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/clarenciaaugustine/" class="social-link">LinkedIn</a>
+                <a href="https://github.com/ClarenciaAugustine-code" class="social-link">GitHub</a>
+                <a href="https://www.instagram.com/clarenciaaugustinee/" class="social-link">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
     <script>
     // ===== CAROUSEL =====
     (function() {
