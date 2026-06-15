@@ -145,15 +145,15 @@ const certificateData = {
         issuer: 'Himpunan Teknik Informatika, BINUS University',
         date: '2025',
         description: 'Awarded for outstanding participation and achievement in TechFest 2025, demonstrating excellence in UI/UX design across web and mobile experiences.',
-        skills: ['UI/UX', 'Web Development', 'Innovation', 'Problem Solving', 'Team Collaboration']
+        skills: ['UI/UX', 'Figma', 'Innovation', 'Problem Solving', 'Team Collaboration']
     },
     study2challenge: {
         image: 'Asset/Study2Challenge.png',
         name: 'Study2Challenge Competition',
-        issuer: '—',
+        issuer: 'BINUS Student Learning Community (BSLC)',
         date: '2025',
         description: 'Certificate from the Study2Challenge competition, earned for designing and building Niat Baik — a web platform for sharing kindness and connecting people who want to help others.',
-        skills: ['Web Development', 'HTML', 'CSS', 'JavaScript', 'Problem Solving']
+        skills: ['Web Development', 'HTML', 'CSS', 'JavaScript', 'Problem Solving', 'Team Collaboration']
     }
 };
 
